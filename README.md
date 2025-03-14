@@ -2,10 +2,10 @@
 ros2_control下的基于Nav2的自动导航机器人
 ## 系统架构
 ### 整体架构
-![Image text](src/bb-robot/doc/bb_bot系统.png)
+![Image text](bb-robot/doc/bb_bot系统.png)
 
 ### ros2_control
-![Image text](src/bb-robot/doc/hardware-interfaces.png)
+![Image text](bb-robot/doc/hardware-interfaces.png)
 ## 环境要求
 - 我在以下版本进行测试
     - Ubuntu 20.04
