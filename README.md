@@ -1,11 +1,26 @@
 # bb_bot
 ros2_control下的基于Nav2的自动导航机器人
+## 系统架构
+### 整体架构
+![Image text](./doc/bb_bot系统.png)
 
+### ros2_control
+![Image text](./doc/hardware-interfaces.png)
 ## 环境要求
 - 我在以下版本进行测试
     - Ubuntu 20.04
     - ROS2 foxy
     - ros2_control
+### 安装ros2-control
+```
+$ sudo apt install ros-foxy-ros2-control ros-foxy-ros2-controllers ros-foxy-gazebo-ros2-control
+
+```
+### 安装slam-toolbox
+```
+$ sudo apt install ros-foxy-slam-toolbox
+
+```
 
 ## 构建
 1. 克隆这个仓库到你的工作空间

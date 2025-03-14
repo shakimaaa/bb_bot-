@@ -2,10 +2,11 @@ import os
 
 from ament_index_python.packages import get_package_share_directory
 
-
+from launch.actions import TimerAction
 from launch import LaunchDescription
 from launch.actions import IncludeLaunchDescription
 from launch.launch_description_sources import PythonLaunchDescriptionSource
+
 
 from launch_ros.actions import Node
 
@@ -43,18 +44,39 @@ def generate_launch_description():
 
  
 
-    diff_drive_spawner = Node(
-        package="controller_manager",
-        executable="spawner.py",
-        arguments=["diff_cont"],
+    # diff_drive_spawner = Node(
+    #     package="controller_manager",
+    #     executable="spawner.py",
+    #     arguments=["diff_cont"],
+    # )
+
+    # joint_broad_spawner = Node(
+    #     package="controller_manager",
+    #     executable="spawner.py",
+    #     arguments=["joint_broad"],
+    # )
+
+    diff_drive_spawner = TimerAction(
+        period=7.0,
+        actions=[
+            Node(
+                package="controller_manager",
+                executable="spawner.py",
+                arguments=["diff_cont"]
+            )
+        ]  
     )
 
-    joint_broad_spawner = Node(
-        package="controller_manager",
-        executable="spawner.py",
-        arguments=["joint_broad"],
+    joint_broad_spawner = TimerAction(
+        period=7.0,
+        actions=[
+            Node(
+                package="controller_manager",
+                executable="spawner.py",
+                arguments=["joint_broad"]
+            )
+        ]        
     )
-
 
 
     # Code for delaying a node (I haven't tested how effective it is)
