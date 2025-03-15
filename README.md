@@ -36,7 +36,10 @@ $ git clone https://github.com/shakimaaa/bb-robot.git
 3. build
 ```
 $ cd ~/colcon_ws
-$ colcon build --symlink-install 
+$ //编译仿真
+$ colcon build --symlink-install --packages-select bb_bot
+$ 编译雷达驱动包
+$ colcon build --symlink-install --packages-select ydlidar
 ```
 
 ## 启动仿真
