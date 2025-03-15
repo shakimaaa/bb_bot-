@@ -3,9 +3,10 @@ ros2_control下的基于Nav2的自动导航机器人
 ## 系统架构
 ### 整体架构
 ![Image text](./doc/bb_bot系统.png)
-
 ### ros2_control
 ![Image text](./doc/hardware-interfaces.png)
+### 3D打印建模
+![Image text](./doc/bb_bot建模.png)
 ## 环境要求
 - 我在以下版本进行测试
     - Ubuntu 20.04
