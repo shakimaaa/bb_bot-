@@ -14,12 +14,12 @@ ros2_control下的基于Nav2的自动导航机器人
     - ros2_control
 ### 安装ros2-control
 ```
-$ sudo apt install ros-foxy-ros2-control ros-foxy-ros2-controllers ros-foxy-gazebo-ros2-control
+sudo apt install ros-foxy-ros2-control ros-foxy-ros2-controllers ros-foxy-gazebo-ros2-control
 
 ```
 ### 安装slam-toolbox
 ```
-$ sudo apt install ros-foxy-slam-toolbox
+sudo apt install ros-foxy-slam-toolbox
 
 ```
 
