@@ -23,15 +23,15 @@ sudo apt install ros-foxy-slam-toolbox
 
 ```
 ### 安装nav2
-、、、
+```
 sudo apt install ros-foxy-navigation2 ros-foxy-nav2-bringup
 
-、、、
+```
 ### 安装 twist-mux
-、、、
+```
 sudo apt install ros-foxy-twist-mux
 
-、、、
+```
 ## 构建
 1. 克隆这个仓库到你的工作空间
 ```
